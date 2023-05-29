@@ -7,10 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xsm: '500px',
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1200px',
+      },
+        colors: {
+        hoverColor: '#ff0336',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic':  'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'hero-bg': "url('images/hero/hero-img.jpg')",
       },
     },
   },

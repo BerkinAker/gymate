@@ -2,26 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* css for pages */
+
+.nav-btn-hover {
+  transform: rotate(360deg);
+  transition: all 1s;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.container-hero {
+  max-width: 111.6rem;
+  margin: 0 auto;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.primary-button-animation::after {
+  content: "";
+  width: 12rem;
+  height: 3.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  transition: all 0.4s;
+}
+
+.primary-button-animation:hover::after {
+  content: "";
+  width: 12rem;
+  height: 3.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
