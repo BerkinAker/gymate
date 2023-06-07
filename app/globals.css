@@ -34,3 +34,265 @@
   top: 0;
   left: 0;
 }
+
+.about-primary-button-animation:after {
+  content: "";
+  width: 12rem;
+  height: 3.5rem;
+  border: 1px solid rgba(63, 63, 63, 0.362);
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  transition: all 0.4s;
+}
+
+.about-primary-button-animation:hover:after {
+  content: "";
+  width: 12rem;
+  height: 3.5rem;
+  border: 1px solid #FF0336;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.4s;
+}
+
+/* featured grid item divs and items */
+.item-0-div {
+  height: 18.75rem;
+  width: 100%;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  overflow: hidden;
+}
+
+.item-1-div {
+  height: 18.75rem;
+  width: 100%;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  overflow: hidden;
+}
+
+.item-2-div {
+  height: 18.75rem;
+  width: 100%;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  overflow: hidden;
+}
+
+.item-3-div {
+  height: 18.75rem;
+  width: 100%;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  overflow: hidden;
+}
+
+.item-4-div {
+  height: 18.75rem;
+  width: 100%;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  overflow: hidden;
+}
+
+.item-5-div {
+  height: 18.75rem;
+  width: 100%;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  overflow: hidden;
+}
+
+/* for all items */
+.item-0-div::before,
+.item-1-div::before,
+.item-2-div::before,
+.item-3-div::before,
+.item-4-div::before,
+.item-5-div::before {
+  position: absolute;
+  transition: all 0.4s;
+  z-index: 6;
+  transform: scale(0.7);
+  width: 50%;
+}
+
+.item-0-div::before {
+  content: url("./images/featured/gym-bike.png");
+  left: -22px;
+  bottom: 44%;
+}
+
+@media screen and (max-width: 768px) {
+  .item-0-div::before {
+    content: url("./images/featured/gym-bike.png");
+    left: -2px;
+    bottom: 44%;
+  }
+}
+
+.item-1-div::before {
+  content: url("./images/featured/karate.png");
+  left: 10px;
+  bottom: 44%;
+}
+
+.item-2-div::before {
+  content: url("./images/featured/dumbell.png");
+  left: 3px;
+  bottom: 43%;
+}
+
+.item-3-div::before {
+  content: url("./images/featured/yoga.png");
+  left: 5px;
+  bottom: 44%;
+}
+
+.item-4-div::before {
+  content: url("./images/featured/boxer.png");
+  left: 5px;
+  bottom: 44%;
+}
+
+.item-5-div::before {
+  content: url("./images/featured/workout.png");
+  left: -19px;
+  bottom: 43%;
+}
+
+.item-0-div:hover::before,
+.item-1-div:hover::before,
+.item-2-div:hover::before,
+.item-3-div:hover::before,
+.item-4-div:hover::before,
+.item-5-div:hover::before {
+  transform: scale(0.71);
+}
+
+.item-0-div:hover::before {
+  content: url("./images/featured/bike-red.png");
+}
+
+.item-1-div:hover::before {
+  content: url("./images/featured/karate-red.png");
+}
+
+.item-2-div:hover::before {
+  content: url("./images/featured/dumbell-red.png");
+}
+
+.item-3-div:hover::before {
+  content: url("./images/featured/yoga-red.png");
+}
+
+.item-4-div:hover::before {
+  content: url("./images/featured/boxer-red.png");
+}
+
+.item-5-div:hover::before {
+  content: url("./images/featured/workout-red.png");
+}
+
+/* all afters for items */
+.item-0-div::after,
+.item-1-div::after,
+.item-2-div::after,
+.item-3-div::after,
+.item-4-div::after,
+.item-5-div::after {
+  content: "";
+  width: 140px;
+  height: 67px;
+  background-color: rgba(255, 255, 255, .3);
+  position: absolute;
+  bottom: 50%;
+  border-radius: 0 50px 50px 0;
+  left: -50px;
+  transform: rotate(30deg);
+  transition: all 0.4s;
+  z-index: 5;
+}
+
+.item-0-div:hover::after,
+.item-1-div:hover::after,
+.item-2-div:hover::after,
+.item-3-div:hover::after,
+.item-4-div:hover::after,
+.item-5-div:hover::after {
+  background-color: rgba(255, 255, 255);
+  transform: rotate(30deg);
+}
+
+/* for all items */
+.item-0,
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5 {
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+
+.item-0 {
+  background-image: url("./images/featured/cycling.jpg");
+  width: 100%;
+  height: 100%;
+}
+
+.item-1 {
+  background-image: url("./images/featured/karate.jpg");
+  width: 100%;
+  height: 100%;
+}
+
+.item-2 {
+  background-image: url("./images/featured/power.jpg");
+  width: 100%;
+  height: 100%;}
+
+.item-3 {
+  background-image: url("./images/featured/meditation.jpg");
+  width: 100%;
+  height: 100%;
+}
+
+.item-4 {
+  background-image: url("./images/featured/mma.jpg");
+  width: 100%;
+  height: 100%;
+}
+
+.item-5 {
+  background-image: url("./images/featured/workout.jpg");
+  width: 100%;
+  height: 100%;
+}
+
+.item-0:hover,
+.item-1:hover,
+.item-2:hover,
+.item-3:hover,
+.item-4:hover,
+.item-5:hover {
+  filter: grayscale(0%);
+  transform: scale(1.3);
+}

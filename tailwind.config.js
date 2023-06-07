@@ -22,6 +22,8 @@ module.exports = {
         'gradient-conic':  'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'hero-bg': "url('images/hero/hero-img.jpg')",
         'card-bg': "url('images/about/about-cards/info-card-bg.jpg')",
+        'about-bg': "url('images/about/background.jpg')",
+        'featured-bg': "url('images/featured/featured-bottom-bg.png')",
       },
     },
   },

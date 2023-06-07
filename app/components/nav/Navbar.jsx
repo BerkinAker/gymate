@@ -41,7 +41,7 @@ const Navbar = () => {
     }
   }
 
-  window.addEventListener("scroll", stickyOrNot)
+  (typeof window !== 'undefined') && window.addEventListener("scroll", stickyOrNot)
 
   return (
     <nav className={`flex py-5 items-center z-50 justify-between px-[30px] fixed w-full bg-transparent
