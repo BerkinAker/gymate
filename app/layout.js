@@ -1,5 +1,5 @@
 import Script from 'next/script'
-import Navbar from './components/Nav/Navbar'
+import Navbar from './components/nav/Navbar'
 import './globals.css'
 import { Inter, Montserrat } from 'next/font/google'
 
