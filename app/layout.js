@@ -1,7 +1,7 @@
 import Script from 'next/script'
 import Navbar from './components/nav/Navbar'
 import './globals.css'
-import { Inter, Montserrat } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react';
 
 const inter = Montserrat({ subsets: ['latin'] })
