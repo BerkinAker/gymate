@@ -2,7 +2,6 @@ import Script from 'next/script'
 import Navbar from './components/nav/Navbar'
 import './globals.css'
 import { Montserrat } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/react';
 
 const inter = Montserrat({ subsets: ['latin'] })
 
@@ -18,7 +17,6 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar />
         {children}
-        <Analytics />
       </body>
     </html>
   )
