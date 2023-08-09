@@ -209,7 +209,7 @@
   content: url("./images/featured/workout-red.png");
 }
 
-/* all afters for items */
+/* afters for items */
 .item-0-div::after,
 .item-1-div::after,
 .item-2-div::after,
@@ -295,4 +295,8 @@
 .item-5:hover {
   filter: grayscale(0%);
   transform: scale(1.3);
+}
+
+.chooseus-section {
+  background-image: url("./images/chooseus/choose-bg.jpg");
 }

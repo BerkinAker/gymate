@@ -68,10 +68,10 @@ const Featured = () => {
           </div>
         </div>
       </section>
-      <div className="bg-featured-bg bg-no-repeat bg-cover bg-center w-full h-[210px] flex items-center">
+      <div className="lg:bg-featured-bg lg:h-[230px] lg:bg-no-repeat lg:bg-cover lg:bg-center bg-transparent bg-[#ff0336] w-full h-[230px] flex items-center">
         <div className="container max-w-[1240px] mx-auto px-6">
-          <div className="flex items-center">
-            <h3 className="text-white text-4xl font-bold max-w-[720px] leading-10">
+          <div className="flex lg:flex-row flex-col lg:text-left text-center lg:gap-0 gap-5 items-center">
+            <h3 className="text-white lg:text-4xl text-3xl font-bold max-w-[720px] leading-10">
               Sizler İçin Her Zaman En İyi Hizmeti Sunuyoruz
             </h3>
             <PrimaryButton
