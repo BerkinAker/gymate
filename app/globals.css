@@ -4,15 +4,30 @@
 
 /* css for pages */
 
-.nav-btn-hover {
+@layer components {
+  .nav-btn-hover {
+    @apply transform rotate-180 transition-all duration-500;
+  }
+
+  .container-hero {
+    @apply max-w-[111.6rem] mx-auto;
+  }
+
+  .primary-button-animation::after {
+    content: "";
+    @apply w-[12rem] h-[3.5rem] border border-solid border-white border-opacity-20 absolute top-[-12px] left-[12px] transition-all duration-500;
+  }
+}
+
+/* .nav-btn-hover {
   transform: rotate(360deg);
   transition: all 1s;
-}
+} 
 
 .container-hero {
   max-width: 111.6rem;
   margin: 0 auto;
-}
+} 
 
 .primary-button-animation::after {
   content: "";
@@ -23,7 +38,7 @@
   top: -12px;
   left: 12px;
   transition: all 0.4s;
-}
+} */
 
 .primary-button-animation:hover::after {
   content: "";
@@ -267,7 +282,8 @@
 .item-2 {
   background-image: url("./images/featured/power.jpg");
   width: 100%;
-  height: 100%;}
+  height: 100%;
+}
 
 .item-3 {
   background-image: url("./images/featured/meditation.jpg");
